@@ -1,0 +1,97 @@
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="24%" />
+<col width="12%" />
+<col width="12%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">パラメータ名</th>
+<th class="head">概要</th>
+<th class="head">入力値</th>
+<th class="head">デフォルト</th>
+<th class="head">備考</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><div class="first last line-block">
+<div class="line">word</div>
+<div class="line">(<a class="reference internal" href="#movie-spot-list-param-note"><em>※下記参照</em></a>)</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">検索ワード</div>
+<div class="line">(上映作品名もしくは映画館名)</div>
+</div>
+</td>
+<td>文字列</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">address</div>
+<div class="line">(<a class="reference internal" href="#movie-spot-list-param-note"><em>※下記参照</em></a>)</div>
+</div>
+</td>
+<td>住所コード</td>
+<td>文字列</td>
+<td>&nbsp;</td>
+<td><cite>coord</cite> を指定したときは無効です。</td>
+</tr>
+<tr class="row-even"><td><div class="first last line-block">
+<div class="line">title</div>
+<div class="line">(<a class="reference internal" href="#movie-spot-list-param-note"><em>※下記参照</em></a>)</div>
+</div>
+</td>
+<td>上映映画ID</td>
+<td>文字列</td>
+<td>&nbsp;</td>
+<td>字幕/吹替など、同一グループの映画情報をまとめて取得します。</td>
+</tr>
+<tr class="row-odd"><td>target-date</td>
+<td>該当日付</td>
+<td>文字列</td>
+<td>現在日付</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>term-day</td>
+<td>検索期間(target-dateの日を含む)</td>
+<td>数値</td>
+<td>1</td>
+<td><div class="first last line-block">
+<div class="line">単位は「日」。</div>
+<div class="line"><cite>title</cite> 指定時のみ有効。</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">coord</div>
+<div class="line">(<a class="reference internal" href="#movie-spot-list-param-note"><em>※下記参照</em></a>)</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">緯度経度の指定。</div>
+<div class="line">指定した緯度経度を中心とする周辺のスポットに絞ります。</div>
+</div>
+</td>
+<td>カンマ区切りの数値(緯度,経度)</td>
+<td>&nbsp;</td>
+<td>緯度経度の形式に関しては <a class="reference internal" href="../rule.html#coord-description"><em>緯度経度の形式について</em></a> を参照してください。</td>
+</tr>
+<tr class="row-even"><td>radius</td>
+<td><div class="first last line-block">
+<div class="line">検索範囲の半径。</div>
+<div class="line">周辺のスポット検索をする際の半径値を設定します。</div>
+</div>
+</td>
+<td>数値</td>
+<td>2000</td>
+<td><div class="first last line-block">
+<div class="line"><cite>coord</cite> を指定したときのみ有効です。</div>
+<div class="line">単位は「メートル」。上限値は5000です。</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
